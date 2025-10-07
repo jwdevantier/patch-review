@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"patch-review-go/internal"
+	"patch-review/internal"
 )
 
 func CmdRm(configDir, reviewPath string) {

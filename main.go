@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"patch-review-go/cmds"
+	"patch-review/cmds"
 )
 
 var configDir string

@@ -1,4 +1,4 @@
-module patch-review-go
+module patch-review
 
 go 1.24.3
 

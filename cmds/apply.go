@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"patch-review-go/internal"
+	"patch-review/internal"
 )
 
 func CmdApply(configDir, reviewPath, patchPath string) {
