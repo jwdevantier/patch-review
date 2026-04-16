@@ -27,7 +27,13 @@ func GitFetch(repoPath, remote string) error {
 }
 
 func GitCreateBranch(repoPath, branchName, baseRemote, baseBranch string) error {
-	return GitCommand(repoPath, "branch", branchName, fmt.Sprintf("%s/%s", baseRemote, baseBranch))
+	var src string
+	if baseRemote != "" {
+		src = fmt.Sprintf("%s/%s", baseRemote, baseBranch)
+	} else {
+		src = baseBranch
+	}
+	return GitCommand(repoPath, "branch", branchName, src)
 }
 
 func GitDeleteBranch(repoPath, branchName string) error {

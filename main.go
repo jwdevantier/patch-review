@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/jwdevantier/patch-review/cmds"
 	"github.com/spf13/cobra"
-	"patch-review/cmds"
 )
 
 var configDir string

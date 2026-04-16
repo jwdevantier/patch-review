@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"patch-review/internal"
+	"github.com/jwdevantier/patch-review/internal"
 )
 
 func CmdReset(configDir, reviewPath, sourceAlias string) {
